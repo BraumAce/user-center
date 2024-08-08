@@ -77,7 +77,7 @@ public class User implements Serializable {
     /**
      * 上次登录时间
      */
-    @TableField(value = "loginTime")
+    @TableField(value = "lastTime")
     private Date lastTime;
 
     /**
