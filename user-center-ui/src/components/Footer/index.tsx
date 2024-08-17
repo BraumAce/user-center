@@ -1,6 +1,7 @@
 import { GithubOutlined } from '@ant-design/icons';
 import { DefaultFooter } from '@ant-design/pro-components';
 import React from 'react';
+import { DOCS_LINK } from "@/constants";
 
 const Footer: React.FC = () => {
   return (
@@ -10,24 +11,25 @@ const Footer: React.FC = () => {
       }}
       links={[
         {
-          key: 'Ant Design Pro',
-          title: 'Ant Design Pro',
-          href: 'https://pro.ant.design',
+          key: 'ByteLighting',
+          title: 'ByteLighting',
+          href: 'https://blog.braumace.cn',
           blankTarget: true,
         },
         {
           key: 'github',
           title: <GithubOutlined />,
-          href: 'https://github.com/ant-design/ant-design-pro',
+          href: 'https://github.com/BraumAce/user-center',
           blankTarget: true,
         },
         {
-          key: 'Ant Design',
-          title: 'Ant Design',
-          href: 'https://ant.design',
+          key: 'Docs With Building',
+          title: 'Docs With Building',
+          href: DOCS_LINK,
           blankTarget: true,
         },
       ]}
+      copyright={ "2024 - BraumAce" }
     />
   );
 };
